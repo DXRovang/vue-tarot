@@ -1,6 +1,13 @@
 <template>
   <div>
    <p>{{ msg }}</p>
+   <ul>
+     <li v-for="card in cards" 
+     :key="card.id">
+     {{ card.name }}>
+     </li>
+  </ul>
+  
    <Card msg="I am a Card"/>
   </div>
 </template>
@@ -13,7 +20,8 @@
       Card
     },
     props: { 
-      msg: String
+      msg: String,
+      cards: Array
     }
   }
 </script>

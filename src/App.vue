@@ -1,6 +1,6 @@
 <template>
   <NavBar msg="Your Navbar"/>
-  <CardList msg="This is a CardList"/>
+  <CardList msg="This is a CardList" :cards="cards.cards"/>
 </template>
 
 <script>
