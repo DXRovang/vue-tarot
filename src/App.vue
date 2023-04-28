@@ -1,15 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <NavBar msg="Your Navbar"/>
+  <CardList msg="This is a CardList"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue'
+import CardList from './components/CardList.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavBar,
+    CardList
+  },
+  data(){
+    return {
+      cards: []
+    }
+  },
+  methods: {
+    async fetchCards(){
+      const res = await fetch('https://raw.githubusercontent.com/DXRovang/tarot-trove-frontend/main/src/cards.json')
+      const data = await res.json()
+      console.log(data)
+      this.cards = data
+    }
+  },
+  async created(){
+    this.cards = await this.fetchCards()
   }
 }
 </script>
