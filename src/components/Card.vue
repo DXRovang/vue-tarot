@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <p>{{ msg }}</p>
+  <div><img :src="card.image" alt="Card Image" />
+    <h2>{{card.name}}</h2>
+    <p></p>
   </div>
 </template>
 
@@ -8,7 +9,10 @@
   export default {
     name: 'One-Card',
     props: { 
-      msg: String
+      card: {
+        type: Object,
+        required: true
+      }
     }
   }
 </script>

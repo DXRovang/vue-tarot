@@ -1,6 +1,10 @@
 <template>
   <div class="nav">
-    <h1>{{ msg }}</h1>
+    <h1>Readings</h1>
+    <h1>New Card</h1>
+    <h1>Random Card</h1>
+    <h1>Major Arcana</h1>
+    <h1>Minor Arcana</h1>
   </div>
 </template>
 

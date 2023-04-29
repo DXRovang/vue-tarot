@@ -1,21 +1,25 @@
 <template>
   <NavBar msg="Your Navbar"/>
-  <CardList msg="This is a CardList" :cards="cards.cards"/>
+  <Header title="the Tarot Trove"/>
+  <CardList :cards="cards.cards"/>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
+import Header from './components/Header.vue'
 import CardList from './components/CardList.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
+    Header,
     CardList
   },
   data(){
     return {
-      cards: []
+      cards: [],
+      title: String
     }
   },
   methods: {
