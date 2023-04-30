@@ -14,7 +14,7 @@ export default {
   components: {
     NavBar,
     Header,
-    CardList
+    CardList,
   },
   data(){
     return {
