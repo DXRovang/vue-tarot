@@ -1,33 +1,29 @@
 <template>
-<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: darkred;">
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Readings</a>
+          <a class="nav-link active text-white" aria-current="page" href="#">Readings</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">New Draw</a>
+          <a class="nav-link text-white" href="#">New Draw</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Random Card</a>
+          <a class="nav-link text-white" href="#">Random Card</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Major Arcana</a>
+          <a class="nav-link text-white" href="#">Major Arcana</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Minor Arcana</a>
+          <a class="nav-link text-white" href="#">Minor Arcana</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>

@@ -1,7 +1,9 @@
 <template>
+<div style="background-color: darkslategray">
   <NavBar msg="Your Navbar"/>
   <Header title="the Tarot Trove"/>
   <CardList :cards="cards.cards"/>
+  </div>
 </template>
 
 <script>
