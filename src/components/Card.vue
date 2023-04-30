@@ -1,8 +1,15 @@
 <template>
-  <div>
-    <img :src="card.image" alt="Card Image" />
-    <h2>{{card.name}}</h2>
-  </div>
+
+  <div class="card">
+ <img :src="card.image" alt="Card Image" style="width: 18rem;"/>
+  <div class="card-body">
+   
+    <p class="card-text">{{ card.name }}</p>
+    <a href="#" class="btn btn-primary"></a>
+  </div></div>
+
+
+
 </template>
 
 <script>
@@ -20,3 +27,5 @@
 <style lang="scss" scoped>
 
 </style>
+
+

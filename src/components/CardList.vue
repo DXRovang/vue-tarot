@@ -1,9 +1,26 @@
 <template>
-  <div>
-     <Card v-for="card in cards" 
+<div>
+   <div class="card-group">
+    <Card v-for="card in cards.slice(0,1)" 
+     :key="card.id" 
+     :card="card"/>
+     </div>
+  <div class="card-group">
+     <Card v-for="card in cards.slice(1,8)" 
      :key="card.id" 
      :card="card"/>
  </div>
+ <div class="card-group">
+    <Card v-for="card in cards.slice(8,15)" 
+     :key="card.id" 
+     :card="card"/>
+     </div>
+  <div class="card-group">
+    <Card v-for="card in cards.slice(15,22)" 
+     :key="card.id" 
+     :card="card"/>
+     </div>
+  </div>
 </template>
 
 <script>
@@ -15,7 +32,7 @@
       Card
     },
     props: { 
-      cards: Array
+      cards: Array,
     }
   }
 </script>
