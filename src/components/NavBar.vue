@@ -17,7 +17,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="#">Major Arcana</a>
+          <router-link to="/majorarcana">Major Arcana</router-link>
         </li>
 
         <li class="nav-item">

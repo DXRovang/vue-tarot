@@ -2,33 +2,27 @@
 <div style="background-color: darkslategray">
   <NavBar msg="Your Navbar"/>
   <Header title="the Tarot Trove"/>
-  <CardList :cards="cards.cards"/>
   </div>
+  <router-view></router-view>
+
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue'
 import Header from './components/Header.vue'
-import CardList from './components/CardList.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    Header,
-    CardList,
+    Header
+    
   },
-  data(){
-    return {
-      cards: [],
-      title: String
-    }
-  },
+  
   methods: {
     async fetchCards(){
       const res = await fetch('https://raw.githubusercontent.com/DXRovang/tarot-trove-frontend/main/src/cards.json')
       const data = await res.json()
-      console.log(data)
       this.cards = data
     }
   },
